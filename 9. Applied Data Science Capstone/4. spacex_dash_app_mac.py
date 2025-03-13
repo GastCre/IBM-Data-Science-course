@@ -16,7 +16,7 @@ app = dash.Dash(__name__)
 
 #Dropdown options
 launch_sites=spacex_df['Launch Site'].value_counts().index
-options=[{'label': 'All Sites', 'value': 'ALL'},{'label': launch_sites[0], 'value': launch_sites[0]},{'label': launch_sites[1], 'value': launch_sites[1]},{'label': launch_sites[2], 'value': launch_sites[2]}]
+options=[{'label': 'All Sites', 'value': 'ALL'},{'label': launch_sites[0], 'value': launch_sites[0]},{'label': launch_sites[1], 'value': launch_sites[1]},{'label': launch_sites[2], 'value': launch_sites[2]},{'label': launch_sites[3], 'value': launch_sites[3]}]
 
 #Success rate
 sr_df=spacex_df.groupby('Launch Site')['class'].mean()
